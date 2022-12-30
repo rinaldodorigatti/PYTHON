@@ -1,0 +1,894 @@
+version: 1
+
+dn: cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: commandcenter1
+gidNumber: 1311
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1666
+displayName: commandcenter1
+createTimestamp: 20210423160729Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210423163945.708699Z#000000#000#000000
+entryDN: cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: YmY3ZDYzOTgtMzg5OS0xMDNiLTk2MmYtYWY2ZDQ4ODVhMmJj
+hasSubordinates: TRUE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210423163945Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: uid=root,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: top
+cn: root
+gidNumber: 0
+homeDirectory: /home/root
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-500
+sn: root
+uid: root
+uidNumber: 0
+gecos: Netbios Domain Administrator
+loginShell: /bin/false
+sambaAcctFlags: [U]
+sambaHomePath: \\fedora31\root
+sambaKickoffTime: 2147483647
+sambaLMPassword: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+sambaLogoffTime: 2147483647
+sambaLogonTime: 0
+sambaNTPassword: 6F33E7CD64EEEE758D32EA61DC442BA9
+sambaPrimaryGroupSID: S-1-5-21-3317358503-2614200973-311491748-512
+sambaProfilePath: \\fedora31\profiles\root
+sambaPwdCanChange: 0
+sambaPwdLastSet: 1619444488
+sambaPwdMustChange: 1623332488
+userPassword:: e1NTSEF9cnc2OE1zTjFGZzZkMXRWZG5DNkZHaEJ5OEdSSU5FdDQ=
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134128.346589Z#000000#000#000000
+entryDN: uid=root,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2VhZDA5MzgtM2FlMC0xMDNiLTgyNTAtMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134128Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=nobody,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: nobody
+gidNumber: 514
+homeDirectory: /nonexistent
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-501
+sn: nobody
+uid: nobody
+uidNumber: 999
+loginShell: /bin/false
+sambaAcctFlags: [NUD        ]
+sambaHomePath: \\fedora31\nobody
+sambaKickoffTime: 2147483647
+sambaLMPassword: NO PASSWORDXXXXXXXXXXXXXXXXXXXXX
+sambaLogoffTime: 2147483647
+sambaLogonTime: 0
+sambaNTPassword: NO PASSWORDXXXXXXXXXXXXXXXXXXXXX
+sambaPrimaryGroupSID: S-1-5-21-3317358503-2614200973-311491748-514
+sambaProfilePath: \\fedora31\profiles\nobody
+sambaPwdCanChange: 0
+sambaPwdLastSet: 0
+sambaPwdMustChange: 2147483647
+shadowExpire: 18743
+shadowMax: 99999
+shadowMin: 1
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134347.182234Z#000000#000#000000
+entryDN: uid=nobody,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2VhZjdiYWEtM2FlMC0xMDNiLTgyNTEtMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134347Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: cn=minegroup,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: minegroup
+gidNumber: 1900
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-3000
+memberUid: ch066200
+createTimestamp: 20210426094316Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426172712.208416Z#000000#000#000000
+entryDN: cn=minegroup,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: OTI1ZjZjNzYtM2FiZi0xMDNiLTg4MjAtYTdhOThiNjE5YmJk
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426172712Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch000011,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: ch000011
+gidNumber: 1311
+homeDirectory: /home/ch000011
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1020
+sn: ch000011
+uid: ch000011
+uidNumber: 1330
+gecos: Mon user ch000011
+sambaAcctFlags: [U          ]
+sambaNTPassword: 932303A12C635DC9CB5084364C55FF19
+sambaPasswordHistory: 000000000000000000000000000000000000000000000000000000
+ 0000000000
+sambaPwdLastSet: 1619196943
+sambaPwdMustChange: 1650699672
+shadowExpire: 20000
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+userPassword:: e1NTSEF9aFZFK3puektxV2hWcWFmNWdua2hENVpseFJvWW1aQUc=
+createTimestamp: 20210423160917Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210423165543.167860Z#000000#000#000000
+entryDN: uid=ch000011,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZmZkYzE3NjgtMzg5OS0xMDNiLTk2MzUtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210423165543Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch000022,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: ch000022
+gidNumber: 1311
+homeDirectory: /home/ch000022
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1021
+sn: ch000022
+uid: ch000022
+uidNumber: 1331
+gecos: Mon user ch000022
+sambaAcctFlags: [U          ]
+sambaNTPassword: 932303A12C635DC9CB5084364C55FF19
+sambaPasswordHistory: 000000000000000000000000000000000000000000000000000000
+ 0000000000
+sambaPwdLastSet: 1619197023
+sambaPwdMustChange: 1714112476
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+userPassword:: e1NTSEF9eUoxSER6Mm9VQmk3TFRhZ21Ka2MvSnN1VHRZbTB2VWo=
+createTimestamp: 20210423160917Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426062123.628960Z#000000#000#000000
+entryDN: uid=ch000022,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZmZlMTk1NGUtMzg5OS0xMDNiLTk2MzYtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426062123Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch000033,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: ch000033
+gidNumber: 1311
+homeDirectory: /home/ch000033
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1022
+sn: ch000033
+uid: ch000033
+uidNumber: 1332
+gecos: Mon user ch000033
+sambaAcctFlags: [U          ]
+sambaNTPassword: 932303A12C635DC9CB5084364C55FF19
+sambaPasswordHistory: 000000000000000000000000000000000000000000000000000000
+ 0000000000
+sambaPwdLastSet: 1619197081
+sambaPwdMustChange: 1714112499
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+userPassword:: e1NTSEF9anRFR0p4aUwzRCtSY0c5cVcwdllpOE9OVmVKbWUxS2c=
+createTimestamp: 20210423160917Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426062230.617376Z#000000#000#000000
+entryDN: uid=ch000033,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZmZlNDkyZWUtMzg5OS0xMDNiLTk2MzctYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426062230Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch066044,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: User ch066044
+gidNumber: 1311
+homeDirectory: /home/ch066044
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1006
+sn: ch066044
+uid: ch066044
+uidNumber: 1400
+gecos: User ch066044,001,058 799 88 78,021 456 67 38,
+givenName: User
+homePhone: 021 456 67 38
+loginShell: /bin/bash
+roomNumber: 001
+sambaAcctFlags: [U          ]
+sambaKickoffTime: 1745821485
+sambaNTPassword: 932303A12C635DC9CB5084364C55FF19
+sambaPasswordHistory: 000000000000000000000000000000000000000000000000000000
+ 0000000000
+sambaPwdLastSet: 1619197145
+sambaPwdMustChange: 1714112636
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+telephoneNumber: 058 799 88 78
+userPassword:: e1NTSEF9Z0Foa09lZlEwQnphQVRrMHljajZ4YU0raGtVb2VrZlA=
+createTimestamp: 20210423160917Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426062457.329395Z#000000#000#000000
+entryDN: uid=ch066044,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZmZlYmE4ZjQtMzg5OS0xMDNiLTk2MzgtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426062457Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch066055,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: ekrem
+gidNumber: 1311
+homeDirectory: /home/ch066055
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1007
+sn: ekrem
+uid: ch066055
+uidNumber: 1401
+gecos: User ch066055
+sambaAcctFlags: [U          ]
+sambaKickoffTime: 1714371976
+sambaNTPassword: 932303A12C635DC9CB5084364C55FF19
+sambaPasswordHistory: 000000000000000000000000000000000000000000000000000000
+ 0000000000
+sambaPwdLastSet: 1619197241
+sambaPwdMustChange: 1714112760
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+userPassword:: e1NTSEF9aytpMXI1M0JpdktyQVF5SVRxZ2tYYU40aEpzT2IvZ2U=
+createTimestamp: 20210423160917Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426062624.509377Z#000000#000#000000
+entryDN: uid=ch066055,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZmZmMzc5YTgtMzg5OS0xMDNiLTk2MzktYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426062624Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch066066,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: michel
+gidNumber: 1311
+homeDirectory: /home/ch066066
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1008
+sn: michel
+uid: ch066066
+uidNumber: 1112
+gecos: User ch066066
+sambaAcctFlags: [U          ]
+sambaKickoffTime: 1714372625
+sambaNTPassword: 932303A12C635DC9CB5084364C55FF19
+sambaPasswordHistory: 000000000000000000000000000000000000000000000000000000
+ 0000000000
+sambaPwdLastSet: 1619197289
+sambaPwdMustChange: 1714113383
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+userPassword:: e1NTSEF9SFVQMFBtaGJwZzlBZ0dRaVFQN0FUclNUT3hnKzhmaHM=
+createTimestamp: 20210423160917Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426063713.264658Z#000000#000#000000
+entryDN: uid=ch066066,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZmZmYjUzMTItMzg5OS0xMDNiLTk2M2EtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426063713Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch066077,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: patrice
+gidNumber: 1311
+homeDirectory: /home/ch066077
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1009
+sn: patrice
+uid: ch066077
+uidNumber: 1113
+gecos: User ch066077
+sambaKickoffTime: 1714372672
+sambaPwdMustChange: 1714113492
+shadowMax: 99999
+shadowMin: 1
+userPassword:: e1NTSEF9WW55cDlBMVYzb0R6WElHKytUYlE2eVYzNjQzb1ZSeUJIaDZnaXc9P
+ Q==
+createTimestamp: 20210423160917Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426063855.586594Z#000000#000#000000
+entryDN: uid=ch066077,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: MDAwMzJjOTAtMzg5YS0xMDNiLTk2M2ItYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426063855Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch066088,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: frederic
+gidNumber: 1311
+homeDirectory: /home/ch066088
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1010
+sn: frederic
+uid: ch066088
+uidNumber: 1114
+gecos: User ch066088
+sambaKickoffTime: 1714372792
+sambaPwdMustChange: 1714113564
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+userPassword:: e1NTSEF9WVNrTWVBRjU0Vk1OY0tFbTc4STRWa1lxOXFlZkMybmZsUWFlNGc9P
+ Q==
+createTimestamp: 20210423160917Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426064039.075782Z#000000#000#000000
+entryDN: uid=ch066088,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: MDAwYmVlYzAtMzg5YS0xMDNiLTk2M2MtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426064039Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch066099,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: rinaldo
+gidNumber: 1311
+homeDirectory: /home/ch066099
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1011
+sn: rinaldo
+uid: ch066099
+uidNumber: 1115
+gecos: User ch066099
+sambaKickoffTime: 1714372923
+sambaPwdMustChange: 1714113711
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+userPassword:: TFU0OCNjaWU=
+createTimestamp: 20210423160917Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426171441.611945Z#000000#000#000000
+entryDN: uid=ch066099,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: MDAxODljNjAtMzg5YS0xMDNiLTk2M2QtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426171441Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch066100,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: rinaldo
+gidNumber: 1311
+homeDirectory: /home/ch066100
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1011
+sn: rinaldo
+uid: ch066100
+uidNumber: 1115
+gecos: User ch066100
+sambaKickoffTime: 1714372923
+sambaPwdMustChange: 1714113711
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+userPassword:: e1NTSEF9bmxKUWNRaW8zT1dYYWlRMU1vdTR6ZGxNa2lDbHpjTFZFYkEzclE9P
+ Q==
+createTimestamp: 20210426171423Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426171423.801649Z#000000#000#000000
+entryDN: uid=ch066100,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: OTc3NDU1OTgtM2FmZS0xMDNiLTgyNWItMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426171423Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ch066200,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: User ch066200
+gidNumber: 1900
+homeDirectory: /home/ch066200
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-3000
+sn: ch066200
+uid: ch066200
+uidNumber: 1000
+gecos: User ch066200
+givenName: ch066200
+loginShell: /bin/bash
+sambaKickoffTime: 1714411923
+sambaPwdMustChange: 1714152707
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+userPassword:: e1NTSEF9a1pCUFNtSUxHcXNLemRHNDQwSDl6QlQ3RzJ3SzRuQmpZcnp0OWc9P
+ Q==
+createTimestamp: 20210426172712Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426173249.857933Z#000000#000#000000
+entryDN: uid=ch066200,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: NjE3MmZkNTgtM2IwMC0xMDNiLTgyNWMtMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426173249Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: cn=posixUsers,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: posixUsers
+gidNumber: 525
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1880
+description: Groupe pour les comptes posix
+displayName: posixUsers
+createTimestamp: 20210423160845Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210427061134.451972Z#000000#000#000000
+entryDN: cn=posixUsers,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZWNjNGI0NDYtMzg5OS0xMDNiLTk2MzEtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210427061134Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=Replicators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: Replicators
+gidNumber: 552
+sambaGroupType: 4
+sambaSID: S-1-5-32-552
+description: Netbios Domain Supports file replication in a sambaDomainName
+displayName: Replicators
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134111.724711Z#000000#000#000000
+entryDN: cn=Replicators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2VjODRjMjAtM2FlMC0xMDNiLTgyNWEtMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134111Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: uid=ldapuser01,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: ldapuser01
+gidNumber: 513
+homeDirectory: /home/ldapuser01
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-2001
+sn: ldapuser01
+uid: ldapuser01
+uidNumber: 1800
+gecos: System User
+givenName: ldapuser01
+loginShell: /bin/bash
+shadowExpire: 19743
+shadowMax: 99999
+shadowMin: 1
+createTimestamp: 20210423170602Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426061944.343525Z#000000#000#000000
+entryDN: uid=ldapuser01,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZWRiNThmMDgtMzhhMS0xMDNiLTg3MzgtMWI1M2Q4NDg3ZGQy
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426061944Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: uid=ldapuser02,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: posixAccount
+objectClass: sambaSamAccount
+objectClass: shadowAccount
+objectClass: top
+cn: ldapuser02
+gidNumber: 513
+homeDirectory: /home/ldapuser02
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-2000
+sn: ldapuser02
+uid: ldapuser02
+uidNumber: 1900
+gecos: User ldapuser02
+givenName: ldapuser02
+loginShell: /bin/bash
+sambaPwdMustChange: 1714112276
+shadowExpire: 17843
+shadowMax: 99999
+shadowMin: 1
+createTimestamp: 20210426060628Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426061810.574132Z#000000#000#000000
+entryDN: uid=ldapuser02,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: NDhhYmY4ZjYtM2FhMS0xMDNiLTg4MWYtYTdhOThiNjE5YmJk
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426061810Z
+structuralObjectClass: inetOrgPerson
+subschemaSubentry: cn=Subschema
+
+dn: cn=Domain Users,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: Domain Users
+gidNumber: 513
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-513
+description: Netbios Domain Users
+displayName: Domain Users
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134111.597434Z#000000#000#000000
+entryDN: cn=Domain Users,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2ViNGUwNGEtM2FlMC0xMDNiLTgyNTMtMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134111Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=posixUsers10,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: posixUsers10
+gidNumber: 1501
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1900
+displayName: posixUsers10
+createTimestamp: 20210423160854Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210423162746.155196Z#000000#000#000000
+entryDN: cn=posixUsers10,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZjFmMTg4NGEtMzg5OS0xMDNiLTk2MzItYWY2ZDQ4ODVhMmJj
+hasSubordinates: TRUE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210423162746Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=posixUsers20,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: posixUsers20
+gidNumber: 1004
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1999
+displayName: posixUsers20
+createTimestamp: 20210423160831Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210423162634.878487Z#000000#000#000000
+entryDN: cn=posixUsers20,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: ZTRhNjEyZGMtMzg5OS0xMDNiLTk2MzAtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210423162634Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=Domain Admins,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: Domain Admins
+gidNumber: 512
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-512
+description: Netbios Domain Administrators
+displayName: Domain Admins
+memberUid: root
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134111.581570Z#000000#000#000000
+entryDN: cn=Domain Admins,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2ViMjc0YTQtM2FlMC0xMDNiLTgyNTItMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134111Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=Domain Guests,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: Domain Guests
+gidNumber: 514
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-514
+description: Netbios Domain Guests Users
+displayName: Domain Guests
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134111.615219Z#000000#000#000000
+entryDN: cn=Domain Guests,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2ViNzk3MDQtM2FlMC0xMDNiLTgyNTQtMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134111Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=Administrators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: Administrators
+gidNumber: 544
+sambaGroupType: 4
+sambaSID: S-1-5-32-544
+description: Netbios Domain Members can fully administer the computer/sambaD
+ omainName
+displayName: Administrators
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134111.652808Z#000000#000#000000
+entryDN: cn=Administrators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2ViZDUzNjAtM2FlMC0xMDNiLTgyNTYtMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134111Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=Print Operators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: Print Operators
+gidNumber: 550
+sambaGroupType: 4
+sambaSID: S-1-5-32-550
+description: Netbios Domain Print Operators
+displayName: Print Operators
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134111.686900Z#000000#000#000000
+entryDN: cn=Print Operators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2VjMjg3MjItM2FlMC0xMDNiLTgyNTgtMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134111Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=Backup Operators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: Backup Operators
+gidNumber: 551
+sambaGroupType: 4
+sambaSID: S-1-5-32-551
+description: Netbios Domain Members can bypass file security to back up file
+ s
+displayName: Backup Operators
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134111.705471Z#000000#000#000000
+entryDN: cn=Backup Operators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2VjNTVjN2MtM2FlMC0xMDNiLTgyNTktMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134111Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=Domain Computers,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: Domain Computers
+gidNumber: 515
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-515
+description: Netbios Domain Computers accounts
+displayName: Domain Computers
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134111.634619Z#000000#000#000000
+entryDN: cn=Domain Computers,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2ViYThjZDQtM2FlMC0xMDNiLTgyNTUtMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134111Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: cn=Account Operators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: Account Operators
+gidNumber: 548
+sambaGroupType: 4
+sambaSID: S-1-5-32-548
+description: Netbios Domain Users to manipulate users accounts
+displayName: Account Operators
+createTimestamp: 20210426134111Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210426134111.668868Z#000000#000#000000
+entryDN: cn=Account Operators,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+entryUUID:: Y2ViZmM2YjgtM2FlMC0xMDNiLTgyNTctMDM1YjQ2MDZlOWQ2
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210426134111Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+
+dn: sambaDomainName=FEDORA31,cn=commandcenter1,o=swiss,dc=mydomain,dc=com
+objectClass: sambaDomain
+sambaDomainName: FEDORA31
+sambaSID: S-1-5-21-3317358503-2614200973-311491748
+sambaAlgorithmicRidBase: 1000
+sambaForceLogoff: -1
+sambaLockoutDuration: 30
+sambaLockoutObservationWindow: 30
+sambaLockoutThreshold: 0
+sambaLogonToChgPwd: 0
+sambaMaxPwdAge: -1
+sambaMinPwdAge: 0
+sambaMinPwdLength: 5
+sambaNextRid: 1007
+sambaNextUserRid: 1000
+sambaPwdHistoryLength: 0
+sambaRefuseMachinePwdChange: 0
+createTimestamp: 20210423160904Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210423160904.406095Z#000000#000#000000
+entryDN: sambaDomainName=FEDORA31,cn=commandcenter1,o=swiss,dc=mydomain,dc=c
+ om
+entryUUID:: ZjgxMmM4ZTItMzg5OS0xMDNiLTk2MzQtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210423160904Z
+structuralObjectClass: sambaDomain
+subschemaSubentry: cn=Subschema
+
+dn: cn=posixUsers5,cn=posixUsers10,cn=commandcenter1,o=swiss,dc=mydomain,dc=
+ com
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: top
+cn: posixUsers5
+gidNumber: 1600
+sambaGroupType: 2
+sambaSID: S-1-5-21-3317358503-2614200973-311491748-1800
+displayName: posixUsers5
+createTimestamp: 20210423160854Z
+creatorsName: cn=Manager,dc=mydomain,dc=com
+entryCSN: 20210423162805.864823Z#000000#000#000000
+entryDN: cn=posixUsers5,cn=posixUsers10,cn=commandcenter1,o=swiss,dc=mydomai
+ n,dc=com
+entryUUID:: ZjFmNWNjZTgtMzg5OS0xMDNiLTk2MzMtYWY2ZDQ4ODVhMmJj
+hasSubordinates: FALSE
+modifiersName: cn=Manager,dc=mydomain,dc=com
+modifyTimestamp: 20210423162805Z
+structuralObjectClass: posixGroup
+subschemaSubentry: cn=Subschema
+

@@ -1,0 +1,9 @@
+version: 1
+dn: cn=es111111,ou=ubpteam,o=espagne,dc=mydomain,dc=com
+objectClass: inetOrgPerson
+uid: es111111
+cn: es111111
+sn: Beatrix Aline
+mobile: +41 78 999 999
+
+# total number of entries: 1

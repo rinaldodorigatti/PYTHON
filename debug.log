@@ -1,0 +1,5 @@
+2022-09-08 13:28:39,303 - DEBUG - Ca c'est du debug
+2022-09-08 13:28:39,303 - INFO - Ca c'est du info
+2022-09-08 13:28:39,303 - WARNING - Ca c'est du warning
+2022-09-08 13:28:39,303 - ERROR - Ca c'est du error
+2022-09-08 13:28:39,303 - CRITICAL - Ca c'est du critical

@@ -1,0 +1,133 @@
+import os
+hostname = "google.com" #example
+response = os.system("ping -c 1 " + hostname)
+
+#and then check the response...
+if response == 0:
+  print hostname, 'is up!'
+else:
+  print hostname, 'is down!'
+
+
+
+
+import platform    # For getting the operating system name
+import subprocess  # For executing a shell command
+
+def ping(host):
+    """
+    Returns True if host (str) responds to a ping request.
+    Remember that a host may not respond to a ping (ICMP) request even if the host name is valid.
+    """
+
+    # Option for the number of packets as a function of
+    param = '-n' if platform.system().lower()=='windows' else '-c'
+
+    # Building the command. Ex: "ping -c 1 google.com"
+    command = ['ping', param, '1', host]
+
+    return subprocess.call(command) == 0
+
+
+
+
+
+pip install pyping
+import pyping
+
+r = pyping.ping('google.com')
+
+if r.ret_code == 0:
+    print("Success")
+else:
+    print("Failed with {}".format(r.ret_code))
+
+
+
+
+
+
+pip3 install tcping
+>>> from tcping import Ping
+# Ping(host, port, timeout)
+>>> ping = Ping('212.69.63.54', 22, 60)
+>>> ping.ping(3)
+Connected to 212.69.63.54[:22]: seq=1 time=23.71 ms
+Connected to 212.69.63.54[:22]: seq=2 time=24.38 ms
+Connected to 212.69.63.54[:22]: seq=3 time=24.00 ms
+
+
+
+
+
+def ping(host):
+    """
+    Returns True if host responds to a ping request
+    """
+    import subprocess, platform
+
+    # Ping parameters as function of OS
+    ping_str = "-n 1" if  platform.system().lower()=="windows" else "-c 1"
+    args = "ping " + " " + ping_str + " " + host
+    need_sh = False if  platform.system().lower()=="windows" else True
+
+    # Ping
+    return subprocess.call(args, shell=need_sh) == 0
+
+# test call
+print(ping("192.168.17.142"))
+
+
+
+
+
+
+import subprocess as sp
+
+def ipcheck():
+    status,result = sp.getstatusoutput("ping -c1 -w2 " + str(pop))
+    if status == 0:
+        print("System " + str(pop) + " is UP !")
+    else:
+        print("System " + str(pop) + " is DOWN !")
+
+
+pop = input("Enter the ip address: ")
+ipcheck()
+
+
+
+
+
+
+import socket
+
+def ping_server(server: str, port: int, timeout=3):
+    """ping server"""
+    try:
+        socket.setdefaulttimeout(timeout)
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((server, port))
+    except OSError as error:
+        return False
+    else:
+        s.close()
+        return True
+
+
+
+
+
+import subprocess as sp
+
+ip = "192.168.122.60"
+status,result = sp.getstatusoutput("ping -c1 -w2 " + ip)
+
+if status == 0: 
+    print("System " + ip + " is UP !")
+else:
+    print("System " + ip + " is DOWN !")
+
+
+
+

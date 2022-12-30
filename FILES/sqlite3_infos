@@ -1,0 +1,364 @@
+sqlite> select b.title,a.nom from albums b left join artists a ON b.artistid = a.artistid order by a.nom;
+title           nom       
+--------------  ----------
+La paye arrive            
+Super le clima            
+Stiff Upper Li  ACDC      
+Ballbreaker     ACDC      
+Back in Black   ACDC      
+Paranoid        Black Sabb
+Master of Real  Black Sabb
+Infinite        Deep Purpl
+Turning to Cri  Deep Purpl
+The Number of   Iron Maide
+Piece of Mind   Iron Maide
+Powerslave      Iron Maide
+Hygiaphone      Telephone 
+La bombe humai  Telephone 
+Argent trop ch  Telephone 
+Cendrillon      Telephone 
+Un autre monde  Telephone 
+sqlite> .help
+.archive ...             Manage SQL archives
+.auth ON|OFF             Show authorizer callbacks
+.backup ?DB? FILE        Backup DB (default "main") to FILE
+.bail on|off             Stop after hitting an error.  Default OFF
+.binary on|off           Turn binary output on or off.  Default OFF
+.cd DIRECTORY            Change the working directory to DIRECTORY
+.changes on|off          Show number of rows changed by SQL
+.check GLOB              Fail if output since .testcase does not match
+.clone NEWDB             Clone data into NEWDB from the existing database
+.databases               List names and files of attached databases
+.dbconfig ?op? ?val?     List or change sqlite3_db_config() options
+.dbinfo ?DB?             Show status information about the database
+.dump ?TABLE? ...        Render all database content as SQL
+.echo on|off             Turn command echo on or off
+.eqp on|off|full|...     Enable or disable automatic EXPLAIN QUERY PLAN
+.excel                   Display the output of next command in a spreadsheet
+.exit ?CODE?             Exit this program with return-code CODE
+.expert                  EXPERIMENTAL. Suggest indexes for specified queries
+.fullschema ?--indent?   Show schema and the content of sqlite_stat tables
+.headers on|off          Turn display of headers on or off
+.help ?-all? ?PATTERN?   Show help text for PATTERN
+.import FILE TABLE       Import data from FILE into TABLE
+.imposter INDEX TABLE    Create imposter table TABLE on index INDEX
+.indexes ?TABLE?         Show names of indexes
+.limit ?LIMIT? ?VAL?     Display or change the value of an SQLITE_LIMIT
+.lint OPTIONS            Report potential schema issues.
+.load FILE ?ENTRY?       Load an extension library
+.log FILE|off            Turn logging on or off.  FILE can be stderr/stdout
+.mode MODE ?TABLE?       Set output mode
+.nullvalue STRING        Use STRING in place of NULL values
+.once (-e|-x|FILE)       Output for the next SQL command only to FILE
+.open ?OPTIONS? ?FILE?   Close existing database and reopen FILE
+.output ?FILE?           Send output to FILE or stdout if FILE is omitted
+.print STRING...         Print literal STRING
+.progress N              Invoke progress handler after every N opcodes
+.prompt MAIN CONTINUE    Replace the standard prompts
+.quit                    Exit this program
+.read FILE               Read input from FILE
+.restore ?DB? FILE       Restore content of DB (default "main") from FILE
+.save FILE               Write in-memory database into FILE
+.scanstats on|off        Turn sqlite3_stmt_scanstatus() metrics on or off
+.schema ?PATTERN?        Show the CREATE statements matching PATTERN
+.selftest ?OPTIONS?      Run tests defined in the SELFTEST table
+.separator COL ?ROW?     Change the column and row separators
+.session ?NAME? CMD ...  Create or control sessions
+.sha3sum ...             Compute a SHA3 hash of database content
+.shell CMD ARGS...       Run CMD ARGS... in a system shell
+.show                    Show the current values for various settings
+.stats ?on|off?          Show stats or turn stats on or off
+.system CMD ARGS...      Run CMD ARGS... in a system shell
+.tables ?TABLE?          List names of tables matching LIKE pattern TABLE
+.testcase NAME           Begin redirecting output to 'testcase-out.txt'
+.timeout MS              Try opening locked tables for MS milliseconds
+.timer on|off            Turn SQL timer on or off
+.trace ?OPTIONS?         Output each SQL statement as it is run
+.vfsinfo ?AUX?           Information about the top-level VFS
+.vfslist                 List all available VFSes
+.vfsname ?AUX?           Print the name of the VFS stack
+.width NUM1 NUM2 ...     Set column widths for "column" mode
+sqlite> select b.title,a.nom from albums b left join artists a ON b.artistid = a.artistid order by a.nom;
+title           nom       
+--------------  ----------
+La paye arrive            
+Super le clima            
+Stiff Upper Li  ACDC      
+Ballbreaker     ACDC      
+Back in Black   ACDC      
+Paranoid        Black Sabb
+Master of Real  Black Sabb
+Infinite        Deep Purpl
+Turning to Cri  Deep Purpl
+The Number of   Iron Maide
+Piece of Mind   Iron Maide
+Powerslave      Iron Maide
+Hygiaphone      Telephone 
+La bombe humai  Telephone 
+Argent trop ch  Telephone 
+Cendrillon      Telephone 
+Un autre monde  Telephone 
+sqlite> .width 40 30
+sqlite> select b.title,a.nom from albums b left join artists a ON b.artistid = a.artistid order by a.nom;
+title                                     nom                           
+----------------------------------------  ------------------------------
+La paye arrive                                                          
+Super le climat                                                         
+Stiff Upper Lip                           ACDC                          
+Ballbreaker                               ACDC                          
+Back in Black                             ACDC                          
+Paranoid                                  Black Sabbath                 
+Master of Reality                         Black Sabbath                 
+Infinite                                  Deep Purple                   
+Turning to Crime                          Deep Purple                   
+The Number of the Beast                   Iron Maiden                   
+Piece of Mind                             Iron Maiden                   
+Powerslave                                Iron Maiden                   
+Hygiaphone                                Telephone                     
+La bombe humaine                          Telephone                     
+Argent trop cher                          Telephone                     
+Cendrillon                                Telephone                     
+Un autre monde                            Telephone                     
+sqlite> select b.title,a.nom from albums b left join artists a ON b.artistid = a.artistid where b.title IS NULL order by a.nom;
+sqlite> select b.title,a.nom from albums b left join artists a ON b.artistid = a.artistid where a.nom IS NULL order by a.nom;
+title                                     nom                           
+----------------------------------------  ------------------------------
+La paye arrive                                                          
+Super le climat                                                         
+
+
+
+
+
+
+sqlite> create table products (product TEXT NOT NULL);
+sqlite> insert into product values ('P1'),('P2'),('P3');
+Error: no such table: product
+sqlite> insert into products values ('P1'),('P2'),('P3');
+sqlite> commit;
+Error: cannot commit - no transaction is active
+sqlite> create table calendars (y int NOT NULL,
+   ...> x int NOT NULL);
+sqlite> insert into calendars values (2019,1),(2019,2),(2019,3),(2019,4),(2019,5),(2019,6),(2019,7),(2019,8),(2019,9),(2019,10),(2019,11),(2019,12);
+sqlite> commit;
+Error: cannot commit - no transaction is active
+sqlite> select * from calendars;
+y                                         x                             
+----------------------------------------  ------------------------------
+2019                                      1                             
+2019                                      2                             
+2019                                      3                             
+2019                                      4                             
+2019                                      5                             
+2019                                      6                             
+2019                                      7                             
+2019                                      8                             
+2019                                      9                             
+2019                                      10                            
+2019                                      11                            
+2019                                      12                            
+sqlite> select * from products;
+product                                 
+----------------------------------------
+P1                                      
+P2                                      
+P3                                      
+sqlite> select * from products cross join calendars;
+product                                   y                               x         
+----------------------------------------  ------------------------------  ----------
+P1                                        2019                            1         
+P1                                        2019                            2         
+P1                                        2019                            3         
+P1                                        2019                            4         
+P1                                        2019                            5         
+P1                                        2019                            6         
+P1                                        2019                            7         
+P1                                        2019                            8         
+P1                                        2019                            9         
+P1                                        2019                            10        
+P1                                        2019                            11        
+P1                                        2019                            12        
+P2                                        2019                            1         
+P2                                        2019                            2         
+P2                                        2019                            3         
+P2                                        2019                            4         
+P2                                        2019                            5         
+P2                                        2019                            6         
+P2                                        2019                            7         
+P2                                        2019                            8         
+P2                                        2019                            9         
+P2                                        2019                            10        
+P2                                        2019                            11        
+P2                                        2019                            12        
+P3                                        2019                            1         
+P3                                        2019                            2         
+P3                                        2019                            3         
+P3                                        2019                            4         
+P3                                        2019                            5         
+P3                                        2019                            6         
+P3                                        2019                            7         
+P3                                        2019                            8         
+P3                                        2019                            9         
+P3                                        2019                            10        
+P3                                        2019                            11        
+P3                                        2019                            12        
+sqlite> select p.product,sum(c.y) as "SUM" from products p cross join calendars c groupy by p.product;
+Error: near "groupy": syntax error
+sqlite> select p.product,sum(c.y) as "SUM" from products p cross join calendars c group by p.product;
+product                                   SUM                           
+----------------------------------------  ------------------------------
+P1                                        24228                         
+P2                                        24228                         
+P3                                        24228                         
+sqlite> select p.product,sum(c.x) as "SUM" from products p cross join calendars c group by p.product;
+product                                   SUM                           
+----------------------------------------  ------------------------------
+P1                                        78                            
+P2                                        78                            
+P3                                        78
+
+
+
+
+
+select p.product,sum(c.x) as "SUMMONTH", sum(c.y) as "SUMYEAR" from products p cross join calendars c group by p.product;
+product                                   SUMMONTH                        SUMYEAR   
+----------------------------------------  ------------------------------  ----------
+P1                                        78                              24228     
+P2                                        78                              24228     
+P3                                        78                              24228     
+
+
+
+
+sqlite> select b.title,a.nom,sum(a.artistid) as "Sum Artist" from albums b inner join artists a on b.artistid = a.artistid group by b.title,a.nom order by a.nom;
+title                           nom                             Sum Artist
+------------------------------  ------------------------------  ----------
+Back in Black                   ACDC                            2         
+Ballbreaker                     ACDC                            2         
+Stiff Upper Lip                 ACDC                            2         
+Master of Reality               Black Sabbath                   3         
+Paranoid                        Black Sabbath                   3         
+Infinite                        Deep Purple                     5         
+Turning to Crime                Deep Purple                     5         
+Piece of Mind                   Iron Maiden                     1         
+Powerslave                      Iron Maiden                     1         
+The Number of the Beast         Iron Maiden                     1         
+Argent trop cher                Telephone                       4         
+Cendrillon                      Telephone                       4         
+Hygiaphone                      Telephone                       4         
+La bombe humaine                Telephone                       4         
+Un autre monde                  Telephone                       4 
+
+
+
+
+sqlite> select a.nom,sum(a.artistid) as "Sum Artist" from artists a inner join albums b on b.artistid = a.artistid group by a.nom order by a.nom;
+nom                             Sum Artist                    
+------------------------------  ------------------------------
+ACDC                            6                             
+Black Sabbath                   6                             
+Deep Purple                     10                            
+Iron Maiden                     3                             
+Telephone                       20
+
+
+
+
+sqlite> select * from artists;
+artistid                        nom                           
+------------------------------  ------------------------------
+1                               Iron Maiden                   
+2                               ACDC                          
+3                               Black Sabbath                 
+4                               Telephone                     
+5                               Deep Purple                   
+sqlite> select * from albums where artistid = 5;
+albumid                         title                           artistid  
+------------------------------  ------------------------------  ----------
+14                              Infinite                        5         
+15                              Turning to Crime                5         
+sqlite> select * from albums where artistid = 4;
+albumid                         title                           artistid  
+------------------------------  ------------------------------  ----------
+9                               Hygiaphone                      4         
+10                              La bombe humaine                4         
+11                              Argent trop cher                4         
+12                              Cendrillon                      4         
+13                              Un autre monde                  4         
+
+
+
+
+sqlite> select a.artistid,b.nom,count(a.artistid) as "max" from albums a, artists b where a.artistid = b.artistid group by a.artistid;
+artistid                        nom                             max       
+------------------------------  ------------------------------  ----------
+1                               Iron Maiden                     3         
+2                               ACDC                            3         
+3                               Black Sabbath                   2         
+4                               Telephone                       5         
+5                               Deep Purple                     2         
+
+
+
+
+sqlite> select a.artistid as "ID",b.nom as "Artist Name",count(a.artistid) as "Count" from albums a, artists b where a.artistid = b.artistid group by a.artistid;
+ID                              Artist Name                     Count     
+------------------------------  ------------------------------  ----------
+1                               Iron Maiden                     3         
+2                               ACDC                            3         
+3                               Black Sabbath                   2         
+4                               Telephone                       5         
+5                               Deep Purple                     2         
+sqlite> select * from albums where artistid = 4;
+albumid                         title                           artistid  
+------------------------------  ------------------------------  ----------
+9                               Hygiaphone                      4         
+10                              La bombe humaine                4         
+11                              Argent trop cher                4         
+12                              Cendrillon                      4         
+13                              Un autre monde                  4  
+
+
+
+
+sqlite> select supplier_id,supplier_name,supplier_groups.group_name from suppliers inner join supplier_groups on suppliers.group_id = supplier_groups.group_id;
+supplier_id  supplier_name  group_name
+-----------  -------------  ----------
+1            Rinaldo        IBM       
+2            Sara           IBM       
+
+
+
+
+
+sqlite> select suppliers.supplier_id,suppliers.supplier_name,supplier_groups.group_id,supplier_groups.group_name from supplier_groups left join suppliers on supplier_groups.group_id = suppliers.group_id;
+supplier_id  supplier_name  group_id    group_name
+-----------  -------------  ----------  ----------
+1            Rinaldo        1           IBM       
+2            Sara           1           IBM       
+5            Lucie          2           MICROSOFT 
+6            Diego          3           UBP       
+                            10          NESTLE    
+                            11          APPLE     
+                            12          GROUPEE   
+
+
+
+sqlite> select suppliers.supplier_id,suppliers.supplier_name,supplier_groups.group_id,supplier_groups.group_name from supplier_groups left join suppliers on supplier_groups.group_id = suppliers.group_id where suppliers.supplier_name IS NULL;
+supplier_id  supplier_name  group_id    group_name
+-----------  -------------  ----------  ----------
+                            10          NESTLE    
+                            11          APPLE     
+                            12          GROUPEE   
+
+
+
+
+sqlite> select a.supplier_id, a.supplier_name, b.group_id, b.group_name from supplier_groups b left join suppliers a on b.group_id = a.group_id where a.supplier_name IS NULL;
+supplier_id  supplier_name  group_id    group_name
+-----------  -------------  ----------  ----------
+                            10          NESTLE    
+                            11          APPLE     
+                            12          GROUPEE   
+
