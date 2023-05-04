@@ -1,0 +1,34 @@
+#column_text {
+    background: #483D8B;
+}
+
+#treeview {
+    border: 0.5px solid white;
+    color: yellow;
+    background-color: #595959;
+}
+
+#treeview:hover {
+    border: 0.5px solid white;
+    color: white;
+    background-color: black;
+}
+
+#label {
+    color: pink;
+    background-color: gray;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 15px;
+    opacity: 0.8;
+}
+
+#label1 {
+    color: pink;
+    background-color: gray;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    opacity: 0.8;
+}

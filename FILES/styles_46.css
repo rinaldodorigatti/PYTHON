@@ -1,0 +1,17 @@
+#progress {
+    background-color: black;
+    color: white;
+}
+
+#progress text {
+  color: white;
+  font-weight: bold;
+}
+#progress trough, progress {
+  min-height: 30px;
+  border-radius: 20px;
+}
+#progress progress {
+  background-image: linear-gradient(90deg, gray, blue);
+  background-color: blue;
+}
