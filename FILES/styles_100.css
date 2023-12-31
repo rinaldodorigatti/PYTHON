@@ -1,0 +1,31 @@
+#grid1 {
+    background: black;
+}
+
+#button1 {
+    background: white;
+    color: black;
+    margin: 10px;
+}
+
+#button1:hover {
+    background: red;
+    color: white;
+    margin: 10px;
+}
+
+#grid2 {
+    background: white;
+}
+
+#button2 {
+    background: black;
+    color: white;
+    margin: 10px;
+}
+
+#button2:hover {
+    background: blue;
+    color: yellow;
+    margin: 10px;
+}

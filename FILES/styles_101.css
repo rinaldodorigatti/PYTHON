@@ -1,0 +1,65 @@
+#window {
+    background: #f4e7d7;
+}
+
+#textview {
+    font-family: "Monospace";
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#insert_button {
+    background: white;
+    color: black;
+    margin: 10px;
+    border: 2px solid #8c6026;
+    border-radius: 10px;
+}
+
+#insert_button:hover {
+    background: #8c6026;
+    color: yellow;
+    margin: 10px;
+    border: 2px solid #8c6026;
+}
+
+#retrive {
+    background: white;
+    color: black;
+    margin: 10px;
+    border: 2px solid #8c6026;
+    border-radius: 10px;
+}
+
+#retrive:hover {
+    background: #8c6026;
+    color: yellow;
+    margin: 10px;
+    border: 2px solid #8c6026;
+}
+
+#delete_button {
+    background: white;
+    color: black;
+    margin: 10px;
+    border: 2px solid #8c6026;
+    border-radius: 10px;
+}
+
+#delete_button:hover {
+    background: #8c6026;
+    color: yellow;
+    margin: 10px;
+    border: 2px solid #8c6026;
+}
+
+#entry {
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#frame {
+    border: 1px solid white;
+}
